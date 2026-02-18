@@ -113,10 +113,10 @@ The server starts at `http://localhost:3000`.
 | `POST` | `/user/:userId/wallet/:walletId/purchase` | Spend funds (user -> system) | `{ amount: number }` |
 
 There are 2 users created for testing purposes. 
-IDs -  user_alice, user_bob 
-AssetID - asset_coin
-SystemUser - system
-Wallet  - wallet_alice, wallet_bob, wallet_system
+- IDs -  user_alice, user_bob
+- AssetID - asset_coin
+- SystemUser - system
+- Wallet  - wallet_alice, wallet_bob, wallet_system
 
 
 ---
