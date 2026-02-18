@@ -106,9 +106,9 @@ The server starts at `http://localhost:3000`.
 | Method | Path | Description | Request Body |
 |--------|------|-------------|--------------|
 | `POST` | `/user` | Create a user (optional referral BONUS) | `{ name: string, referralUserId?: string, referralWalletId?: string }` |
-| `GET` | `/user` | List all users | — |
-| `GET` | `/user/:userId` | Get user + their wallets | — |
-| `GET` | `/user/:userId/wallet/:walletId/balance` | Get wallet balance | — |
+| `GET` | `/user` | List all users |  |
+| `GET` | `/user/:userId` | Get user + their wallets |  |
+| `GET` | `/user/:userId/wallet/:walletId/balance` | Get wallet balance |  |
 | `POST` | `/user/:userId/wallet/:walletId/top-up` | Add funds (system -> user) | `{ amount: number, transactionId: string }` |
 | `POST` | `/user/:userId/wallet/:walletId/purchase` | Spend funds (user -> system) | `{ amount: number }` |
 
