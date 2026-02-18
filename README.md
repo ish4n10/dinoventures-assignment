@@ -5,7 +5,25 @@ A transactional ledger based wallet service built with Node.js, Express, TypeORM
 ---
 
 ## Prerequisites
-NodeJS, psql, postgres server
+NodeJS, psql, postgres server — **or** just use docker
+
+## Quick start Docker
+
+The easiest way to run the full stack (database + seed + app) in one command:
+
+```bash
+docker compose up --build
+```
+
+This will:
+1. Start a Postgres container and wait until it's healthy
+2. Run `seed.sql` automatically (creates tables + inserts seed data)
+3. Build and start the app at `http://localhost:3000`
+
+No `.env` needed, as the compose file sets `DATABASE_URL` internally.
+
+---
+
 
 ## 1. Environment Setup
 
